@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+  --color-paper: #f7f8f3;
+  --color-ink: #20221f;
+  --color-muted: #666b62;
+  --color-line: #d9ddd2;
+  --color-panel: #ffffff;
+  --color-mint: #2f6f5e;
+  --color-coral: #cf5b46;
+  --color-gold: #d6a43c;
+  --color-violet: #6260a8;
+}
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+
+html {
+  min-height: 100%;
+  background: #f7f8f3;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #f7f8f3;
+  color: #20221f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: #2f6f5e;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(#d9ddd2 1px, transparent 1px),
+    linear-gradient(90deg, #d9ddd2 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: center;
+}
+
+.hero-board {
+  border: 1px solid #20221f;
+  background: #ffffff;
+  box-shadow: 10px 10px 0 #20221f;
+}
+
+.number-tile {
+  display: inline-flex;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #20221f;
+  border-radius: 6px;
+  background: #fff;
+  font-weight: 700;
+}
